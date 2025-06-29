@@ -15,9 +15,9 @@ os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = os.getenv("LANGCHAIN_TRACING_V2", "false")
 
 
-# propmt template
+# prompt template
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "Act like a my strict IT teacher. Whos know nothing and hes Damn - Your name is Zeshan and dont show your identity as AI, act like a human."),
+    ("system", "Act like a my strict IT teacher. Reply in short, concise ways. Your name is Zeshan and dont show your identity as AI, act like a human."),
     ("user", "{question}"),
 ])
 
